@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Gallery - Kadesh Oasis Academy</title>
+  <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
+  <link href="https://cdnjs.cloudflare.com/ajax/libs/lightbox2/2.11.3/css/lightbox.min.css" rel="stylesheet">
+</head>
+<body class="bg-yellow-50 font-sans text-gray-800">
+
+  <!-- Navbar -->
+  <header class="bg-pink-400 text-white shadow-lg">
+    <div class="container mx-auto flex justify-between items-center p-4">
+      <h1 class="text-2xl font-bold">Kadesh Oasis Academy</h1>
+      <nav class="space-x-4">
+        <a href="index.html" class="hover:text-yellow-200">Home</a>
+        <a href="gallery.html" class="hover:text-yellow-200">Gallery</a>
+      </nav>
+    </div>
+  </header>
+
+  <!-- Gallery -->
+  <section class="container mx-auto py-16 px-6">
+    <h2 class="text-3xl font-bold text-center text-pink-500 mb-10">Our Happy Moments 📸</h2>
+    <div class="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-6">
+      <a href="gallery/hero1.jpg" data-lightbox="gallery" data-title="Moment 1"><img src="gallery/hero1.jpg" alt="Moment 1" class="rounded-xl shadow-lg hover:scale-105 transform transition"></a>
+      <a href="gallery/hero2.jpg" data-lightbox="gallery" data-title="Moment 2"><img src="gallery/hero2.jpg" alt="Moment 2" class="rounded-xl shadow-lg hover:scale-105 transform transition"></a>
+      <a href="gallery/hero3.jpg" data-lightbox="gallery" data-title="Moment 3"><img src="gallery/hero3.jpg" alt="Moment 3" class="rounded-xl shadow-lg hover:scale-105 transform transition"></a>
+      <a href="gallery/hero4.jpg" data-lightbox="gallery" data-title="Moment 4"><img src="gallery/hero4.jpg" alt="Moment 4" class="rounded-xl shadow-lg hover:scale-105 transform transition"></a>
+      <a href="gallery/hero5.jpg" data-lightbox="gallery" data-title="Moment 5"><img src="gallery/hero5.jpg" alt="Moment 5" class="rounded-xl shadow-lg hover:scale-105 transform transition"></a>
+      <a href="gallery/hero6.jpg" data-lightbox="gallery" data-title="Moment 6"><img src="gallery/hero6.jpg" alt="Moment 6" class="rounded-xl shadow-lg hover:scale-105 transform transition"></a>
+      <a href="gallery/hero7.jpg" data-lightbox="gallery" data-title="Moment 7"><img src="gallery/hero7.jpg" alt="Moment 7" class="rounded-xl shadow-lg hover:scale-105 transform transition"></a>
+      <a href="gallery/hero8.jpg" data-lightbox="gallery" data-title="Moment 8"><img src="gallery/hero8.jpg" alt="Moment 8" class="rounded-xl shadow-lg hover:scale-105 transform transition"></a>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer class="bg-pink-400 text-white py-6 mt-10">
+    <div class="container mx-auto flex flex-col sm:flex-row justify-between items-center">
+      <p>© 2025 Kadesh Oasis Academy</p>
+      <div class="space-x-4 mt-4 sm:mt-0">
+        <a href="https://www.facebook.com/yourpage" target="_blank">Facebook</a>
+        <a href="https://www.tiktok.com/@yourprofile" target="_blank">TikTok</a>
+        <a href="https://x.com/yourhandle" target="_blank">X</a>
+      </div>
+    </div>
+  </footer>
+
+  <!-- Floating Social Media Bar -->
+  <div class="fixed bottom-5 right-5 flex flex-col space-y-3 z-50">
+    <a href="https://wa.me/27824383773" target="_blank" class="bg-green-500 text-white rounded-full shadow-lg p-3 hover:bg-green-600 transition flex items-center justify-center">
+      <img src="https://img.icons8.com/ios-filled/30/ffffff/whatsapp.png" alt="WhatsApp">
+    </a>
+    <a href="https://www.facebook.com/yourpage" target="_blank" class="bg-blue-600 text-white rounded-full shadow-lg p-3 hover:bg-blue-700 transition flex items-center justify-center">
+      <img src="https://img.icons8.com/ios-filled/30/ffffff/facebook.png" alt="Facebook">
+    </a>
+    <a href="https://www.tiktok.com/@yourprofile" target="_blank" class="bg-black text-white rounded-full shadow-lg p-3 hover:bg-gray-800 transition flex items-center justify-center">
+      <img src="https://img.icons8.com/ios-filled/30/ffffff/tiktok.png" alt="TikTok">
+    </a>
+    <a href="https://x.com/yourhandle" target="_blank" class="bg-gray-900 text-white rounded-full shadow-lg p-3 hover:bg-gray-700 transition flex items-center justify-center">
+      <img src="https://img.icons8.com/ios-filled/30/ffffff/twitterx.png" alt="X">
+    </a>
+  </div>
+
+  <!-- Lightbox2 JS -->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/lightbox2/2.11.3/js/lightbox-plus-jquery.min.js"></script>
+  <script>
+    lightbox.option({
+      'resizeDuration': 200,
+      'wrapAround': true,
+      'fadeDuration': 300,
+      'imageFadeDuration': 300
+    });
+  </script>
+</body>
+</html>
