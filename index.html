@@ -202,7 +202,44 @@
       currentSlide = nextSlide;
     }
     setInterval(showNextSlide, 5000);
+
+      const form = document.getElementById("application-form");
+  const messageBox = document.getElementById("form-message");
+
+  form.addEventListener("submit", async function(e) {
+    e.preventDefault();
+
+    const formData = new FormData(form);
+
+    const response = await fetch(form.action, {
+      method: "POST",
+      body: formData
+    });
+
+    const result = await response.json();
+
+    if (result.success) {
+      messageBox.className = "mt-4 p-4 rounded-lg bg-green-100 text-green-700";
+      messageBox.textContent = "✅ Thank you! Your application has been submitted successfully.";
+      messageBox.classList.remove("hidden");
+      form.reset();
+    } else {
+      messageBox.className = "mt-4 p-4 rounded-lg bg-red-100 text-red-700";
+      messageBox.textContent = "❌ Oops! Something went wrong. Please try again.";
+      messageBox.classList.remove("hidden");
+    }
+  });
+
+    // Mobile menu toggle
+const menuBtn = document.getElementById("menu-btn");
+const mobileMenu = document.getElementById("mobile-menu");
+
+menuBtn.addEventListener("click", () => {
+  mobileMenu.classList.toggle("hidden");
+});
+
   </script>
 </body>
 </html>
+
 
